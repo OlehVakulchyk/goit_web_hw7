@@ -53,7 +53,3 @@ class Grade(Base):
         'disciplines.id', ondelete='CASCADE'))
     student = relationship('Student', backref='grade')
     discipline = relationship('Discipline', backref='grade')
-
-# create a blank database
-Base.metadata.create_all(bind=engine)
-

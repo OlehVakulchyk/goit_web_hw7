@@ -22,9 +22,6 @@ def date_range(start: date, end: date) -> list:
     return result
 
 
-'''
-Функция создания БД, в качестве параметра - передаем путь к файлу с SQL скриптом
-'''
 
 '''Функция генерации фейковых данных и заполнения ими БД'''
 
@@ -52,10 +49,9 @@ def fill_data():
     number_of_students = 50
 
     def seed_teachers():
-        for i in range(number_of_teachers):
+        for _ in range(number_of_teachers):
             teacher = Teacher(fullname=fake.name())
             session.add(teacher)
-            print(i)
         session.commit()
 
 

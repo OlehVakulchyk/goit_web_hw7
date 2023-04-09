@@ -12,6 +12,7 @@ psycopg2-binary = "^2.9.6"
 sqlalchemy = "^2.0.9"
 faker = "^18.4.0"
 prettytable = "^3.6.0"
+alembic = "^1.10.3"
 
 
 [build-system]
